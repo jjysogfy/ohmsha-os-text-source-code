@@ -1,0 +1,11 @@
+stackframe
+stackframe.lst
+pthread-sample
+prod-cons-semaphore
+prod-cons-mutex
+deadlock
+exercise3-3
+
+a.out
+*.out
+*.o

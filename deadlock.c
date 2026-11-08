@@ -28,8 +28,8 @@ void func1() {
 
 void func2() {
   while (1) {
+    pthread_mutex_lock(&m1);  // 順番を揃えるとデッドロックしない
     pthread_mutex_lock(&m2);
-    pthread_mutex_lock(&m1);
     printf("func2 %d\n", count++);
     pthread_mutex_unlock(&m1);
     pthread_mutex_unlock(&m2);
